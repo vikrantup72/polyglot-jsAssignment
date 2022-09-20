@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jasmine": "^4.4.0",
+    "number-to-words": "^1.2.4"
+  }
+}
