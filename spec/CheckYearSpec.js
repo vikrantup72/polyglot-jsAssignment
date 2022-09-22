@@ -5,6 +5,8 @@ describe("Check Day", function(){
         checkYearDay = new CheckYearDay();
     });
     it("Check Day", function() {
+    	expect(null).toBe(checkYearDay.check(null));
+    	expect('').toBe(checkYearDay.check(''));
     	expect(31).toBe(checkYearDay.check("Jan"));
     	expect(28).toBe(checkYearDay.check("Feb"));
     	expect(31).toBe(checkYearDay.check("Mar"));
