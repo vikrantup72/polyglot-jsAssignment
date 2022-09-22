@@ -6,10 +6,10 @@ describe("Check Number Positive || Negative || Zero", function(){
     });
 
     it("Check Number", function() {
+    	expect(null).toEqual(checkNumber.check(null));
+    	expect("").toEqual(checkNumber.check(""));
+        expect("Zero").toEqual(checkNumber.check(0));
     	expect("Positive").toEqual(checkNumber.check(14));
     	expect("Negative").toEqual(checkNumber.check(-14));
-    	expect("Negative").toEqual(checkNumber.check(null));
-    	expect("Zero").toEqual(checkNumber.check(0));
-
     });
 });
