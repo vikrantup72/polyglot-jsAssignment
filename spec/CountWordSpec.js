@@ -6,10 +6,14 @@ describe("count word app", function() {
     });
 
     it("count word", function() {
-        // expect(null).toBe(countWord.count(null));
-        // expect('').toBe(countWord.count(''));
+        expect(null).toBe(countWord.count(null));
+        expect('').toBe(countWord.count(''));
     	expect(1).toEqual(countWord.count("Hello"));
-    	expect(4).toEqual(countWord.count("hello\nworldtom\tjerry"));
+    	expect(4).toEqual(countWord.count("hello\nworld tom\tjerry"));
+    	expect(1).toEqual(countWord.count("hello\n"));
+    	expect(4).toEqual(countWord.count("hello\nworld_to\rm\tjerry"));
+
+
 
     });
 });
