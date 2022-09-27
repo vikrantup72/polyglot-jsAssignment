@@ -16,6 +16,10 @@
       expect('2 vowels and 3 consonents').toBe(countVC.count('hello'))
       expect('2 vowels and 3 consonents').toBe(countVC.count('hell o'))
       expect('3 vowels and 7 consonents').toBe(countVC.count('Hello_world'))
+      expect('1 vowels and 1 consonents').toBe(countVC.count('A B'))
+      expect('3 vowels and 5 consonents').toBe(countVC.count('A/B?C Hello'))
+
+
 
 
     });
