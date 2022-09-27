@@ -6,15 +6,15 @@ describe("check Palindrome Number app", function() {
     });
 
     it("Check palindrome word", function() {
-        expect('It is not a palindrome').toBe(checkPalindrome.check(null))
-        expect('It is not a palindrome').toBe(checkPalindrome.check(''))
-    	expect("It is a palindrome").toEqual(checkPalindrome.check("121"));
-    	expect("It is a palindrome").toEqual(checkPalindrome.check("MaDam"));
-    	expect("It is a palindrome").toEqual(checkPalindrome.check("jAhAj"));
-    	expect("It is not a palindrome").toEqual(checkPalindrome.check("Name"));
-    	expect("It is not a palindrome").toEqual(checkPalindrome.check("kAvi"));
-    	expect("It is not a palindrome").toEqual(checkPalindrome.check("First"));
-        expect('It is a palindrome').toBe(checkPalindrome.check('1_1'))
+        expect(checkPalindrome.check(null)).toBe('It is not a palindrome')
+        expect(checkPalindrome.check('')).toBe('It is not a palindrome')
+    	expect(checkPalindrome.check("121")).toEqual("It is a palindrome");
+    	expect(checkPalindrome.check("MaDam")).toEqual("It is a palindrome");
+    	expect(checkPalindrome.check("jAhAj")).toEqual("It is a palindrome");
+    	expect(checkPalindrome.check("Name")).toEqual("It is not a palindrome");
+    	expect(checkPalindrome.check("kAvi")).toEqual("It is not a palindrome");
+    	expect(checkPalindrome.check("First")).toEqual("It is not a palindrome");
+        expect(checkPalindrome.check('1_1')).toBe('It is a palindrome')
 
 
 
