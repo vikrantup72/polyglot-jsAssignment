@@ -8,11 +8,11 @@ describe('Reverse Word App', () => {
     })
     it("It is leap year", function() {
     	expect(null).toEqual(reverseWord.check(null));
-        expect('').toEqual(reverseWord.check(''));
-        expect("A").toEqual(reverseWord.check("A"));
-        expect("ba").toEqual(reverseWord.check("ab"));
-        expect("olleh").toEqual(reverseWord.check("hello"));
-        expect("dlrow olleh").toEqual(reverseWord.check("hello world"));
-        expect("dlroW olleH").toEqual(reverseWord.check("Hello World"));
+        expect(reverseWord.check('')).toEqual('');
+        expect(reverseWord.check("A")).toEqual("A");
+        expect(reverseWord.check("ab")).toEqual("ba");
+        expect(reverseWord.check("hello")).toEqual("olleh");
+        expect(reverseWord.check("hello world")).toEqual("dlrow olleh");
+        expect(reverseWord.check("Hello World")).toEqual("dlroW olleH");
     });
  })
