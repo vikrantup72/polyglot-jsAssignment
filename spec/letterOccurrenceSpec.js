@@ -9,7 +9,7 @@ describe("LetterOccurrence App ", () => {
     expect(letterOccurrence.find(null)).toEqual(null);
     expect(letterOccurrence.find("")).toEqual("");
     expect(letterOccurrence.find("A")).toEqual("");
-    expect(letterOccurrence.find("AA")).toEqual("A:2");
+    expect(letterOccurrence.find("A--A")).toEqual("A:2");
     expect(letterOccurrence.find("AAB")).toEqual("A:2");
     expect(letterOccurrence.find("AABB")).toEqual("A:2,B:2");
     expect(
